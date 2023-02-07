@@ -1,0 +1,111 @@
+body {
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  color: rgba(256, 256, 256, 0.8);
+
+  line-height: 1.5;
+}
+.container {
+  width: 80vw;
+  margin: 2rem auto;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a.btn {
+  display: inline-block;
+}
+header {
+  width: 8rem;
+}
+.hero {
+  margin: 4rem 0;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  gap: 4rem;
+}
+.btn {
+  outline: 0;
+  border: 0;
+  margin-top: 1rem;
+}
+.btn--white {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 0.7rem 5rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+.btn--white:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+.icon-container {
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon-container > i {
+  width: 1rem;
+}
+.icon-container:hover {
+  border: 1px solid hsl(300, 69%, 71%);
+}
+.icon-container:hover > i {
+  color: hsl(300, 69%, 71%);
+}
+.btn--white,
+.icon-container,
+.icon-container > i {
+  transition: all 0.3s;
+}
+.social-media-icons {
+  margin: 5rem 0;
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    text-align: left;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media-icons {
+    margin-top: 10rem;
+    text-align: right;
+  }
+  .btn--white {
+    padding: 0.7rem 3rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(75, 14%, 5%);
+}
